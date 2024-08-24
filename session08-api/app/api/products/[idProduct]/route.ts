@@ -19,6 +19,7 @@ let products = [
 export async function GET(req: any, res: any) {
     console.log(":req", req);
     console.log(":res", res);
+
     let findItem = products.find((item) => {
         return item.id == +res.params.idProduct;
     });
